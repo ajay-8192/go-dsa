@@ -62,9 +62,11 @@ func main() {
 	// 6. ZigZag Conversion
 	fmt.Println("================================================")
 	fmt.Println("6. ZigZag Conversion")
-	str6 := "PAYPALISHIRING"
-	rows6 := 4
+	// str6 := "PAYPALISHIRING"
+	// rows6 := 3
+	str6 := "A"
+	rows6 := 1
 	newStr6 := leetcode.ZigZagConversion(str6, rows6)
-	fmt.Println("Palindrome:", newStr6)
+	fmt.Println("ZigZagConversion:", newStr6)
 	fmt.Println("================================================")
 }

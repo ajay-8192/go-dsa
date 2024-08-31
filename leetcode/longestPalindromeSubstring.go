@@ -1,7 +1,5 @@
 package leetcode
 
-import "fmt"
-
 func LongestPalindromeSubstring(s string) string {
 	// babad: bab | aba
 
@@ -50,9 +48,6 @@ func LongestPalindromeSubstring(s string) string {
 			centerIndex = i
 		}
 	}
-	fmt.Println(centerIndex/2, maxPalindrome, s)
-	if maxPalindrome%2 == 0 {
-		return s[(centerIndex-1)/2-(maxPalindrome-1) : (centerIndex-1)/2+(maxPalindrome-1)]
-	}
-	return s[(centerIndex-1-maxPalindrome)/2 : maxPalindrome]
+
+	return s[(centerIndex - maxPalindrome)/2 : (centerIndex + maxPalindrome)/2]
 }
